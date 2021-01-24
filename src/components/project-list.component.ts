@@ -1,10 +1,10 @@
-import { BaseProject } from "./base-project.component.js";
-import { ProjectItem } from "./project-item.component.js";
+import { BaseProject } from "./base-project.component";
+import { ProjectItem } from "./project-item.component";
 
-import { AutoBind } from "../decorators/auto-bind.decorator.js";
-import { DragTarget } from "../interfaces/drag-drop.interface.js";
-import { Project, ProjectStatus } from "../models/project.model.js";
-import { projectState } from "../state/project.state.js";
+import { AutoBind } from "../decorators/auto-bind.decorator";
+import { DragTarget } from "../interfaces/drag-drop.interface";
+import { Project, ProjectStatus } from "../models/project.model";
+import { projectState } from "../state/project.state";
 
 export class ProjectList extends BaseProject implements DragTarget {
     private listElement: HTMLUListElement;
